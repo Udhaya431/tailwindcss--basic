@@ -4,21 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whatsapp | tailwindcss start</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/apple-touch-icon.png">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/apple-touch-icon.png"
+    />
     <link rel="stylesheet" href="assets/css/output.css" />
   </head>
   <body class="bg-emerald-300">
-    <section class="max-w-md mx-auto">
+    <section class="max-w-md mx-auto relative">
       <div
         class="bg-emerald-800 text-white px-3 py-5 flex items-center justify-between"
       >
-        <h4 class="font-semibold">WhatsApp</h4>
-        <div class="flex">
+        <h3 class="font-semibold">WhatsApp</h3>
+        <div class="flex gap-x-2 items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="28"
+            height="28"
             viewBox="0 0 24 24"
+            class="cursor-pointer"
           >
             <path
               fill="currentColor"
@@ -27,9 +32,10 @@
           </svg>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="28"
+            height="28"
             viewBox="0 0 24 24"
+            class="cursor-pointer"
           >
             <path
               fill="currentColor"
@@ -38,8 +44,9 @@
           </svg>
         </div>
       </div>
+      <!-- Nav link section -->
       <ul
-        class="text-white bg-emerald-800 px-3 py-2 flex items-center justify-between space-x-4"
+        class="text-white bg-emerald-800 px-3 py-2 flex items-center justify-between"
       >
         <li>
           <svg
@@ -56,32 +63,36 @@
           </svg>
         </li>
 
-        <li class="flex justify-between items-center flex-1">
+        <li class="flex justify-between items-center flex-1 ml-5">
           <div
-            class="uppercase font-medium text-sm flex items-center space-x-2 relative"
+            class="font-medium text-medium flex justify-between items-center space-x-2 cursor-pointer"
           >
-            <span>Chats</span>
-            <span
-              class="bg-white text-emerald-800 rounded-full p-1 w-5 h-5 text-xs flex items-center justify-center font-medium"
+            <span class="relative flex gap-x-2">Chats
+              <span
+              class="bg-white text-emerald-800 rounded-full p-1 w-4 h-4 text-xs flex items-center font-medium"
             >
               8
             </span>
-            <div class="absolute w-full top-8 right-2 h-1 bg-white"></div>
+            <div class="absolute w-full top-8 h-1 bg-white"></div>
+            </span>
           </div>
           <div
-            class="uppercase font-medium text-sm flex items-center space-x-2"
+            class="font-medium text-medium flex items-center space-x-2 text-gray-200"
           >
-            <a href="./status.html">status</a>
+            <a href="./status.html">Updates</a>
           </div>
           <div
-            class="uppercase font-medium text-sm flex items-center space-x-2 mr-4"
+            class="font-medium text-medium flex items-center space-x-2 mr-4 text-gray-200"
           >
-            <span>calls</span>
+            <a href="./calls.html" class="cursor-pointer">calls</a>
           </div>
         </li>
       </ul>
-      <div class=" bg-white relative">
-        <div class="flex px-3 py-3 space-x-4 items-center hover:cursor-pointer hover:bg-gray-100">
+      <!-- chats container -->
+      <div class="bg-white relative overflow-auto overflow-y-scroll h-[82vh]">
+        <div
+          class="flex px-3 py-3 space-x-4 items-center hover:cursor-pointer hover:bg-gray-100"
+        >
           <div>
             <img
               src="https://ui-avatars.com/api/?background=random&name=shanker"
@@ -101,7 +112,9 @@
             >
           </div>
         </div>
-        <div class="flex px-3 py-3 space-x-4 items-center hover:cursor-pointer hover:bg-gray-100">
+        <div
+          class="flex px-3 py-3 space-x-4 items-center hover:cursor-pointer hover:bg-gray-100"
+        >
           <div>
             <img
               src="https://ui-avatars.com/api/?background=random&name=Vinoth"
@@ -121,7 +134,9 @@
             >
           </div>
         </div>
-        <div class="flex px-3 py-3 space-x-4 items-center hover:cursor-pointer hover:bg-gray-100">
+        <div
+          class="flex px-3 py-3 space-x-4 items-center hover:cursor-pointer hover:bg-gray-100"
+        >
           <div>
             <img
               src="https://ui-avatars.com/api/?background=random&name=siva"
@@ -143,7 +158,9 @@
             >
           </div>
         </div>
-        <div class="flex px-3 py-3 space-x-4 items-center hover:cursor-pointer hover:bg-gray-100">
+        <div
+          class="flex px-3 py-3 space-x-4 items-center hover:cursor-pointer hover:bg-gray-100"
+        >
           <div>
             <img
               src="https://ui-avatars.com/api/?background=random&name=Deadpool"
@@ -153,9 +170,7 @@
           </div>
           <div class="flex-1">
             <h4 class="font-medium">DeadPool</h4>
-            <p class="text-grey-600 text-sm">
-              Mamae 10Mints varaen..
-            </p>
+            <p class="text-grey-600 text-sm">Mamae 10Mints varaen..</p>
           </div>
           <div class="flex flex-col items-center space-y-1">
             <span class="text-green-600 font-semibold">3:20pm</span>
@@ -165,7 +180,45 @@
             >
           </div>
         </div>
-        <div class="flex px-3 py-3 space-x-4 items-center hover:cursor-pointer hover:bg-gray-100">
+        <div
+          class="flex px-3 py-3 space-x-4 items-center hover:cursor-pointer hover:bg-gray-100"
+        >
+          <div>
+            <img
+              src="https://ui-avatars.com/api/?background=random&name=Balaji"
+              alt="Balaji"
+              class="rounded-full"
+            />
+          </div>
+          <div class="flex-1">
+            <h4 class="font-medium">Balaji</h4>
+            <p class="text-grey-600 text-sm">Epa veetuku varuvinga..</p>
+          </div>
+          <div class="flex flex-col items-center space-y-1">
+            <span class="text-grey-500 font-semibold">1:20pm</span>
+          </div>
+        </div>
+        <div
+          class="flex px-3 py-3 space-x-4 items-center hover:cursor-pointer hover:bg-gray-100"
+        >
+          <div>
+            <img
+              src="https://ui-avatars.com/api/?background=random&name=Vimal"
+              alt="vimal"
+              class="rounded-full"
+            />
+          </div>
+          <div class="flex-1">
+            <h4 class="font-medium">Vimal</h4>
+            <p class="text-grey-600 text-sm">Epa veetuku varuvinga..</p>
+          </div>
+          <div class="flex flex-col items-center space-y-1">
+            <span class="text-grey-500 font-semibold">12:20am</span>
+          </div>
+        </div>
+        <div
+          class="flex px-3 py-3 space-x-4 items-center hover:cursor-pointer hover:bg-gray-100"
+        >
           <div>
             <img
               src="https://ui-avatars.com/api/?background=random&name=Jyothika"
@@ -175,17 +228,29 @@
           </div>
           <div class="flex-1">
             <h4 class="font-medium">Jyothika</h4>
-            <p class="text-grey-600 text-sm">
-              Epa veetuku varuvinga..
-            </p>
+            <p class="text-grey-600 text-sm">Epa veetuku varuvinga..</p>
           </div>
           <div class="flex flex-col items-center space-y-1">
             <span class="text-grey-500 font-semibold">3:20pm</span>
           </div>
         </div>
-        <div class="bg-emerald-800 w-12 h-12 rounded-full flex items-center justify-center absolute bottom-6 right-6 cursor-pointer hover:bg-emerald-700 shadow-xl shadow-gray-400">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-white"><path fill="currentColor" d="M2 22V4q0-.825.588-1.412T4 2h16q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18H6zm4-8h8v-2H6zm0-3h12V9H6zm0-3h12V6H6z"/></svg>
-        </div>
+      </div>
+      <!-- Floating icon -->
+      <div
+        class="bg-emerald-800 w-12 h-12 rounded-full flex items-center justify-center absolute bottom-6 right-6 cursor-pointer hover:bg-emerald-700 shadow-xl shadow-gray-400"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current text-white"
+        >
+          <path
+            fill="currentColor"
+            d="M2 22V4q0-.825.588-1.412T4 2h16q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18H6zm4-8h8v-2H6zm0-3h12V9H6zm0-3h12V6H6z"
+          />
+        </svg>
       </div>
     </section>
   </body>
